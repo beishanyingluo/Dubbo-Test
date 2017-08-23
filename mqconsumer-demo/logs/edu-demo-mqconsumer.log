@@ -1,0 +1,372 @@
+[INFO ][20170823 18:37:10,546][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4c099833: startup date [Wed Aug 23 18:37:10 CST 2017]; root of context hierarchy
+[INFO ][20170823 18:37:10,622][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 18:37:11,027][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 18:37:11,103][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 18:37:11,556][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 18:37:11,565][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[WARN ][20170823 18:37:11,759][AbstractApplicationContext:487] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:220)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.MQConsumer.main(MQConsumer.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry.<init>(DefaultAdvisorAdapterRegistry.java:50)
+	at org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry.<clinit>(GlobalAdvisorAdapterRegistry.java:32)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.<init>(AbstractAutoProxyCreator.java:113)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.<init>(AbstractAdvisorAutoProxyCreator.java:48)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.<init>(AspectJAwareAdvisorAutoProxyCreator.java:47)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.<init>(AnnotationAwareAspectJAutoProxyCreator.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: org.aopalliance.intercept.MethodInterceptor
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 26 more
+[ERROR][20170823 18:37:11,764][MQConsumer:19] 错哪了??
+[INFO ][20170823 18:41:51,684][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9e76345: startup date [Wed Aug 23 18:41:51 CST 2017]; root of context hierarchy
+[INFO ][20170823 18:41:51,758][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 18:41:52,149][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 18:41:52,208][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 18:41:52,476][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 18:41:52,477][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[WARN ][20170823 18:41:52,523][AbstractApplicationContext:487] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:220)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.MQConsumer.main(MQConsumer.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry.<init>(DefaultAdvisorAdapterRegistry.java:50)
+	at org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry.<clinit>(GlobalAdvisorAdapterRegistry.java:32)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.<init>(AbstractAutoProxyCreator.java:113)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.<init>(AbstractAdvisorAutoProxyCreator.java:48)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.<init>(AspectJAwareAdvisorAutoProxyCreator.java:47)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.<init>(AnnotationAwareAspectJAutoProxyCreator.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: org.aopalliance.intercept.MethodInterceptor
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 26 more
+[ERROR][20170823 18:41:52,527][MQConsumer:19] 错哪了??
+[INFO ][20170823 18:47:10,782][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@9e76345: startup date [Wed Aug 23 18:47:10 CST 2017]; root of context hierarchy
+[INFO ][20170823 18:47:10,867][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 18:47:11,299][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 18:47:11,361][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 18:47:11,633][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 18:47:11,634][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[WARN ][20170823 18:47:11,679][AbstractApplicationContext:487] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:220)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.MQConsumer.main(MQConsumer.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry.<init>(DefaultAdvisorAdapterRegistry.java:50)
+	at org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry.<clinit>(GlobalAdvisorAdapterRegistry.java:32)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.<init>(AbstractAutoProxyCreator.java:113)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.<init>(AbstractAdvisorAutoProxyCreator.java:48)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.<init>(AspectJAwareAdvisorAutoProxyCreator.java:47)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.<init>(AnnotationAwareAspectJAutoProxyCreator.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: org.aopalliance.intercept.MethodInterceptor
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 26 more
+[ERROR][20170823 18:47:11,683][MQConsumer:19] 错哪了??
+[INFO ][20170823 18:50:49,948][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Wed Aug 23 18:50:49 CST 2017]; root of context hierarchy
+[INFO ][20170823 18:50:50,023][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 18:50:50,435][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 18:50:50,494][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 18:50:50,767][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 18:50:50,768][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[WARN ][20170823 18:50:50,825][AbstractApplicationContext:487] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:220)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.MQConsumer.main(MQConsumer.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry.<init>(DefaultAdvisorAdapterRegistry.java:50)
+	at org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry.<clinit>(GlobalAdvisorAdapterRegistry.java:32)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.<init>(AbstractAutoProxyCreator.java:113)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.<init>(AbstractAdvisorAutoProxyCreator.java:48)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.<init>(AspectJAwareAdvisorAutoProxyCreator.java:47)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.<init>(AnnotationAwareAspectJAutoProxyCreator.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: org.aopalliance.intercept.MethodInterceptor
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 26 more
+[ERROR][20170823 18:50:50,832][MQConsumer:19] 错哪了??
+[INFO ][20170823 18:52:57,554][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c4d95c7: startup date [Wed Aug 23 18:52:57 CST 2017]; root of context hierarchy
+[INFO ][20170823 18:52:57,631][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 18:52:58,055][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 18:52:58,114][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 18:52:58,409][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 18:52:58,411][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[WARN ][20170823 18:52:58,495][AbstractApplicationContext:487] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1038)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:220)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.MQConsumer.main(MQConsumer.java:16)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1086)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
+	at org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry.<init>(DefaultAdvisorAdapterRegistry.java:50)
+	at org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry.<clinit>(GlobalAdvisorAdapterRegistry.java:32)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.<init>(AbstractAutoProxyCreator.java:113)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.<init>(AbstractAdvisorAutoProxyCreator.java:48)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.<init>(AspectJAwareAdvisorAutoProxyCreator.java:47)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.<init>(AnnotationAwareAspectJAutoProxyCreator.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: org.aopalliance.intercept.MethodInterceptor
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 26 more
+[ERROR][20170823 18:52:58,501][MQConsumer:19] 错哪了??
+[INFO ][20170823 18:57:04,121][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Wed Aug 23 18:57:04 CST 2017]; root of context hierarchy
+[INFO ][20170823 18:57:04,193][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 18:57:04,614][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 18:57:04,668][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 18:57:04,921][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 18:57:04,923][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20170823 18:57:05,226][ExecutorConfigurationSupport:165] Initializing ExecutorService  'threadPool'
+[INFO ][20170823 18:57:05,466][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 18:57:05,670][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@44685ce1 }
+[INFO ][20170823 18:57:05,706][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 18:57:05,804][ConsumerActiveMqListener:40] 接受的 message:{"content":"通过ActionMQ异步发送邮件呀!","subject":"ActiveMq测试哈","to":"beishanyingluo@foxmail.com"}
+[INFO ][20170823 19:32:11,997][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Wed Aug 23 19:32:11 CST 2017]; root of context hierarchy
+[INFO ][20170823 19:32:12,067][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 19:32:12,454][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 19:32:12,508][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 19:32:12,769][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 19:32:12,770][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20170823 19:32:13,009][ExecutorConfigurationSupport:165] Initializing ExecutorService  'threadPool'
+[INFO ][20170823 19:32:13,357][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 19:32:13,610][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@22722a97 }
+[INFO ][20170823 19:32:13,636][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[WARN ][20170823 19:32:35,604][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: java.io.EOFException
+[INFO ][20170823 19:32:35,607][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:32:40,608][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:32:40,609][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:32:45,612][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:32:45,612][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:32:50,614][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:32:50,615][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:32:55,617][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:32:55,622][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:00,624][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:00,627][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:05,629][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:05,629][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:10,630][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:10,630][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:15,632][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:15,632][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:20,633][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:20,633][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:25,637][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:25,638][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:30,641][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:30,642][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:35,645][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:35,645][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:40,648][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:40,648][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:45,649][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:45,649][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:50,654][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:50,654][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:33:55,655][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:33:55,656][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:00,660][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:00,660][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:05,662][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:05,662][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:10,664][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:10,664][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:15,665][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:15,665][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:20,668][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:20,668][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:25,669][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:25,672][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:30,676][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:30,676][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:35,677][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:35,678][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:40,680][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:40,681][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:45,684][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:45,685][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:50,686][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:50,686][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:34:55,687][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:34:55,688][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:35:00,689][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:35:00,689][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:35:05,691][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:35:05,692][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:35:10,693][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:35:10,694][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:35:15,696][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:35:15,696][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[WARN ][20170823 19:35:20,697][DefaultMessageListenerContainer:844] Setup of JMS message listener invoker failed for destination 'queue://xu.edu.mqtest.v1' - trying to recover. Cause: The Session is closed
+[INFO ][20170823 19:35:20,697][DefaultMessageListenerContainer:893] Successfully refreshed JMS Connection
+[INFO ][20170823 19:35:34,885][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Wed Aug 23 19:35:34 CST 2017]; root of context hierarchy
+[INFO ][20170823 19:35:34,954][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 19:35:35,364][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 19:35:35,416][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 19:35:35,663][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 19:35:35,665][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20170823 19:35:35,976][ExecutorConfigurationSupport:165] Initializing ExecutorService  'threadPool'
+[INFO ][20170823 19:35:36,295][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 19:35:36,539][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@2594aeed }
+[INFO ][20170823 19:35:36,647][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 19:35:36,716][ConsumerActiveMqListener:40] 接受的 message:{"content":"通过ActionMQ异步发送邮件呀!","subject":"ActiveMq测试哈","to":"beishanyingluo@foxmail.com"}
+[INFO ][20170823 19:39:47,555][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Wed Aug 23 19:39:47 CST 2017]; root of context hierarchy
+[INFO ][20170823 19:39:47,643][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 19:39:48,036][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 19:39:48,092][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 19:39:48,337][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 19:39:48,339][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20170823 19:39:48,573][ExecutorConfigurationSupport:165] Initializing ExecutorService  'threadPool'
+[INFO ][20170823 19:39:48,846][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 19:39:49,046][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@52ebd4ee }
+[INFO ][20170823 19:39:49,075][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 19:40:29,687][ConsumerActiveMqListener:40] 接受的 message:{"content":"通过ActionMQ异步发送邮件呀!","subject":"ActiveMq测试哈","to":"beishanyingluo@foxmail.com"}
+[INFO ][20170823 20:28:15,288][AbstractApplicationContext:510] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Wed Aug 23 20:28:15 CST 2017]; root of context hierarchy
+[INFO ][20170823 20:28:15,374][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 20:28:15,844][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 20:28:15,908][XmlBeanDefinitionReader:317] Loading XML bean definitions from class path resource [spring-mail.xml]
+[INFO ][20170823 20:28:16,175][PropertiesLoaderSupport:172] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 20:28:16,176][PropertiesLoaderSupport:172] Loading properties file from class path resource [mail.properties]
+[INFO ][20170823 20:28:16,417][ExecutorConfigurationSupport:165] Initializing ExecutorService  'threadPool'
+[INFO ][20170823 20:28:16,696][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 20:28:16,913][SingleConnectionFactory:291] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@788f905c }
+[INFO ][20170823 20:28:16,937][DefaultLifecycleProcessor$LifecycleGroup:341] Starting beans in phase 2147483647
+[INFO ][20170823 20:28:17,009][ConsumerActiveMqListener:40] 接受的 message:{"content":"通过ActionMQ异步发送邮件呀!","subject":"ActiveMq测试哈","to":"beishanyingluo@foxmail.com"}
