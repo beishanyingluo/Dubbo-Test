@@ -1,0 +1,1044 @@
+[INFO ][20170823 11:58:39,762][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3ce3e8f3: display name [org.springframework.context.support.ClassPathXmlApplicationContext@3ce3e8f3]; startup date [Wed Aug 23 11:58:39 CST 2017]; root of context hierarchy
+[INFO ][20170823 11:58:39,998][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring/spring-mq.xml]
+[ERROR][20170823 11:58:40,947][MQProducerTest:32] 出错了:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/spring-mq.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/spring-mq.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:349)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:113)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:80)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:422)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: java.io.FileNotFoundException: class path resource [spring/spring-mq.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	... 13 more
+[INFO ][20170823 12:00:27,205][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7: display name [org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7]; startup date [Wed Aug 23 12:00:27 CST 2017]; root of context hierarchy
+[INFO ][20170823 12:00:27,290][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [config/spring-mq.xml]
+[ERROR][20170823 12:00:27,292][MQProducerTest:32] 出错了:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring-mq.xml]; nested exception is java.io.FileNotFoundException: class path resource [config/spring-mq.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:349)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:113)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:80)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:422)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: java.io.FileNotFoundException: class path resource [config/spring-mq.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	... 13 more
+[INFO ][20170823 12:19:14,574][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09]; startup date [Wed Aug 23 12:19:14 CST 2017]; root of context hierarchy
+[INFO ][20170823 12:19:14,683][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [config/spring-context.xml]
+[ERROR][20170823 12:19:14,683][MQProducerTest:32] 出错了:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [config/spring-context.xml]; nested exception is java.io.FileNotFoundException: class path resource [config/spring-context.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:349)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:113)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:80)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:422)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:352)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: java.io.FileNotFoundException: class path resource [config/spring-context.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:143)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	... 13 more
+[INFO ][20170823 12:24:09,833][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 12:24:09 CST 2017]; root of context hierarchy
+[INFO ][20170823 12:24:09,914][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 12:24:12,470][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 12:24:13,048][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@72e907ca
+[INFO ][20170823 12:24:13,264][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 12:24:13,424][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@72e907ca: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 12:24:14,053][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:192.168.77.132:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:192.168.77.132:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 12:28:52,013][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 12:28:52 CST 2017]; root of context hierarchy
+[INFO ][20170823 12:28:52,116][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 12:29:03,828][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 12:29:06,981][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2bb46c0d
+[INFO ][20170823 12:29:07,037][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 12:29:07,113][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2bb46c0d: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 12:29:07,492][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:192.168.77.132:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:192.168.77.132:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 12:59:42,978][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7: display name [org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7]; startup date [Wed Aug 23 12:59:42 CST 2017]; root of context hierarchy
+[INFO ][20170823 12:59:43,076][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 12:59:47,203][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 12:59:48,599][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@46d74af3
+[INFO ][20170823 12:59:48,663][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 12:59:48,739][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@46d74af3: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 12:59:49,140][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:127.0.0.1:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:127.0.0.1:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 13:00:41,587][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 13:00:41 CST 2017]; root of context hierarchy
+[INFO ][20170823 13:00:41,675][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 13:00:43,729][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 13:00:44,339][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c
+[INFO ][20170823 13:00:44,391][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 13:00:44,469][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 13:00:44,846][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 13:07:24,715][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a06c11d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@1a06c11d]; startup date [Wed Aug 23 13:07:24 CST 2017]; root of context hierarchy
+[INFO ][20170823 13:07:24,960][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 13:07:28,809][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 13:07:30,354][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@1a06c11d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@5416ee46
+[INFO ][20170823 13:07:30,541][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 13:07:30,908][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5416ee46: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 13:07:52,003][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 13:51:44,375][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@a0c017d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@a0c017d]; startup date [Wed Aug 23 13:51:44 CST 2017]; root of context hierarchy
+[INFO ][20170823 13:51:44,619][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 13:51:53,771][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 13:52:01,632][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@a0c017d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@782be176
+[INFO ][20170823 13:52:01,858][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 13:52:02,231][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@782be176: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 13:52:16,745][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 14:05:36,007][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 14:05:36 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:05:36,096][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:05:37,863][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:05:38,153][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c
+[INFO ][20170823 14:05:38,208][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:05:38,294][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 14:05:38,315][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:05:38,316][MQProducerTest:32] 出错了:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mqProducer': Autowiring of fields failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.jms.core.JmsTemplate com.xu.test.MQProducer.activeMqJmsTemplate; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+Related cause: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.jms.core.JmsTemplate com.xu.test.MQProducer.activeMqJmsTemplate; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:435)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.injectFields(InjectionMetadata.java:105)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:240)
+	... 16 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:222)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:652)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:610)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:412)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:211)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:385)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1138)
+	... 25 more
+Related cause:
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:222)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:73)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:98)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:83)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:105)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:281)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:791)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:399)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:211)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:385)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1138)
+	... 25 more
+Related cause:
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.apache.activemq.pool.PooledConnectionFactory] for bean with name 'pooledConnectionFactory' defined in class path resource [spring-mq.xml]; nested exception is java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:222)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:91)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:105)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:281)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:791)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:399)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: java.lang.ClassNotFoundException: org.apache.activemq.pool.PooledConnectionFactory
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:211)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:385)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1138)
+	... 24 more
+[INFO ][20170823 14:07:34,195][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09]; startup date [Wed Aug 23 14:07:34 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:07:34,282][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:07:38,568][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:07:39,426][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09]: org.springframework.beans.factory.support.DefaultListableBeanFactory@44b89233
+[INFO ][20170823 14:07:39,479][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:07:39,565][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44b89233: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:07:39,973][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 14:13:28,906][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7: display name [org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7]; startup date [Wed Aug 23 14:13:28 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:13:28,993][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:13:31,110][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:13:31,724][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@44b8e2c7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6
+[INFO ][20170823 14:13:31,776][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:13:31,854][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 14:13:32,026][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:13:32,028][MQProducerTest:32] 出错了:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mqProducer': Autowiring of fields failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.jms.core.JmsTemplate com.xu.test.MQProducer.activeMqJmsTemplate; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMqJmsTemplate' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'connectionFactory' while setting bean property 'connectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.jms.core.JmsTemplate com.xu.test.MQProducer.activeMqJmsTemplate; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMqJmsTemplate' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'connectionFactory' while setting bean property 'connectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:435)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.injectFields(InjectionMetadata.java:105)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:240)
+	... 16 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMqJmsTemplate' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'connectionFactory' while setting bean property 'connectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:275)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:671)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:610)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:412)
+	... 18 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:275)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:269)
+	... 33 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:269)
+	... 46 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:104)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:59)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1276)
+	... 57 more
+[INFO ][20170823 14:32:26,207][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470: display name [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]; startup date [Wed Aug 23 14:32:26 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:32:26,294][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:32:44,021][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:32:44,573][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]: org.springframework.beans.factory.support.DefaultListableBeanFactory@448ad367
+[INFO ][20170823 14:32:44,628][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:32:44,713][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ad367: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 14:32:44,893][DefaultSingletonBeanRegistry:421] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ad367: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:32:44,894][MQProducerTest:32] 出错了:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mqProducer': Autowiring of fields failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.jms.core.JmsTemplate com.xu.test.MQProducer.activeMqJmsTemplate; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMqJmsTemplate' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'connectionFactory' while setting bean property 'connectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:243)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:959)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:429)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:19)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springframework.jms.core.JmsTemplate com.xu.test.MQProducer.activeMqJmsTemplate; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMqJmsTemplate' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'connectionFactory' while setting bean property 'connectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:435)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.injectFields(InjectionMetadata.java:105)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessAfterInstantiation(AutowiredAnnotationBeanPostProcessor.java:240)
+	... 16 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activeMqJmsTemplate' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'connectionFactory' while setting bean property 'connectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:275)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:671)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:610)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:412)
+	... 18 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [spring-mq.xml]: Cannot resolve reference to bean 'targetConnectionFactory' while setting bean property 'targetConnectionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:275)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:269)
+	... 33 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'targetConnectionFactory' defined in class path resource [spring-mq.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:269)
+	... 46 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'brokerURL' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid broker URI: tcp\:localhost\:61616
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:104)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:59)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1276)
+	... 57 more
+[INFO ][20170823 14:33:53,254][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470: display name [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]; startup date [Wed Aug 23 14:33:53 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:33:53,359][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:33:56,223][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:33:56,664][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]: org.springframework.beans.factory.support.DefaultListableBeanFactory@51c9c8aa
+[INFO ][20170823 14:33:56,713][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:33:56,790][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51c9c8aa: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:33:57,246][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 14:34:23,840][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 14:34:23 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:34:23,925][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:34:25,684][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:34:25,990][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9
+[INFO ][20170823 14:34:26,058][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:34:26,135][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:34:26,504][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 14:36:55,954][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470: display name [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]; startup date [Wed Aug 23 14:36:55 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:36:56,043][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:36:58,014][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:36:58,447][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2b1d8ca6
+[INFO ][20170823 14:36:58,499][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:36:58,577][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b1d8ca6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:36:58,946][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 14:39:56,684][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09]; startup date [Wed Aug 23 14:39:56 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:39:56,780][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:39:59,112][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:39:59,834][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@7c998c09]: org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6
+[INFO ][20170823 14:39:59,883][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:39:59,959][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:40:00,333][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 11 more
+[INFO ][20170823 14:49:33,462][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@694435e5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]; startup date [Wed Aug 23 14:49:33 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:49:33,556][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:49:35,592][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:49:36,195][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@20fcfc67
+[INFO ][20170823 14:49:36,280][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:49:36,391][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20fcfc67: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:49:36,835][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:125)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:110)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:81)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 14 more
+[INFO ][20170823 14:51:21,643][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@694435e5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]; startup date [Wed Aug 23 14:51:21 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:51:21,729][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:51:24,286][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:51:24,952][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c
+[INFO ][20170823 14:51:25,006][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:51:25,086][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:51:25,299][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not create Transport. Reason: java.io.IOException: Transport not scheme specified: []
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not create Transport. Reason: java.io.IOException: Transport not scheme specified: []
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:317)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:330)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:125)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:110)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:81)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.io.IOException: Transport not scheme specified: []
+	at org.apache.activemq.transport.TransportFactory.findTransportFactory(TransportFactory.java:172)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:63)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:315)
+	... 15 more
+[INFO ][20170823 14:52:45,927][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@694435e5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]; startup date [Wed Aug 23 14:52:45 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:52:46,020][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:52:47,922][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:52:48,331][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9
+[INFO ][20170823 14:52:48,384][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:52:48,463][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:52:48,854][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:125)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:110)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:81)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 14 more
+[INFO ][20170823 14:55:48,978][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@694435e5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]; startup date [Wed Aug 23 14:55:48 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:55:49,076][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:55:50,690][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:55:50,959][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2b1d8ca6
+[INFO ][20170823 14:55:51,013][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:55:51,095][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b1d8ca6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:55:51,572][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:125)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:110)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:81)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 14 more
+[INFO ][20170823 14:56:41,552][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@694435e5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]; startup date [Wed Aug 23 14:56:41 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:56:41,666][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:56:44,936][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:56:45,673][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9
+[INFO ][20170823 14:56:45,725][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:56:45,805][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 14:56:46,198][SingleConnectionFactory:293] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@1642f9ef }
+[INFO ][20170823 14:56:46,546][MQProducerTest:35] 结束了，哈哈！
+[INFO ][20170823 14:57:23,274][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@694435e5: display name [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]; startup date [Wed Aug 23 14:57:23 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:57:23,356][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:57:25,415][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:57:25,962][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@694435e5]: org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9
+[INFO ][20170823 14:57:26,025][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:57:26,106][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16953ad9: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[ERROR][20170823 14:57:26,508][MQProducerTest:32] 出错了:
+org.springframework.jms.UncategorizedJmsException: Uncategorized exception occured during JMS processing; nested exception is javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.springframework.jms.support.JmsUtils.convertJmsAccessException(JmsUtils.java:308)
+	at org.springframework.jms.support.JmsAccessor.convertJmsAccessException(JmsAccessor.java:168)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:474)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:548)
+	at org.springframework.jms.core.JmsTemplate.send(JmsTemplate.java:534)
+	at com.xu.test.MQProducer.sendMessage(MQProducer.java:30)
+	at com.xu.test.params.MQProducerTest.main(MQProducerTest.java:29)
+Caused by: javax.jms.JMSException: Could not connect to broker URL: tcp:localhost:61616. Reason: java.lang.IllegalArgumentException: hostname can't be null
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:358)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:303)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:243)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:125)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:110)
+	at org.apache.activemq.pool.PooledConnectionFactory.createConnection(PooledConnectionFactory.java:81)
+	at org.springframework.jms.connection.SingleConnectionFactory.doCreateConnection(SingleConnectionFactory.java:343)
+	at org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:290)
+	at org.springframework.jms.connection.SingleConnectionFactory.createConnection(SingleConnectionFactory.java:227)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:184)
+	at org.springframework.jms.core.JmsTemplate.execute(JmsTemplate.java:461)
+	... 4 more
+Caused by: java.lang.IllegalArgumentException: hostname can't be null
+	at java.net.InetSocketAddress.checkHost(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:485)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:464)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:138)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:58)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:338)
+	... 14 more
+[INFO ][20170823 14:58:07,181][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 14:58:07 CST 2017]; root of context hierarchy
+[INFO ][20170823 14:58:07,297][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 14:58:08,961][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 14:58:09,802][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2b1d8ca6
+[INFO ][20170823 14:58:09,856][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 14:58:09,935][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2b1d8ca6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 14:58:10,316][SingleConnectionFactory:293] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@3d510e21 }
+[INFO ][20170823 14:58:10,581][MQProducerTest:35] 结束了，哈哈！
+[INFO ][20170823 19:40:26,609][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470: display name [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]; startup date [Wed Aug 23 19:40:26 CST 2017]; root of context hierarchy
+[INFO ][20170823 19:40:26,756][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 19:40:28,559][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 19:40:28,885][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@20d2b470]: org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c
+[INFO ][20170823 19:40:28,938][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 19:40:29,016][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@411edf1c: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 19:40:29,409][SingleConnectionFactory:293] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@240c5895 }
+[INFO ][20170823 19:40:29,674][MQProducerTest:35] 结束了，哈哈！
+[INFO ][20170823 20:27:58,586][AbstractApplicationContext:411] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46309a10: display name [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]; startup date [Wed Aug 23 20:27:58 CST 2017]; root of context hierarchy
+[INFO ][20170823 20:27:58,673][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-context.xml]
+[INFO ][20170823 20:28:01,042][XmlBeanDefinitionReader:323] Loading XML bean definitions from class path resource [spring-mq.xml]
+[INFO ][20170823 20:28:01,631][AbstractApplicationContext:426] Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@46309a10]: org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6
+[INFO ][20170823 20:28:01,683][PropertiesLoaderSupport:178] Loading properties file from class path resource [mq.properties]
+[INFO ][20170823 20:28:01,764][DefaultListableBeanFactory:414] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20fe99b6: defining beans [org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,mqProducer,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,targetConnectionFactory,pooledConnectionFactory,connectionFactory,activeMqJmsTemplate]; root of factory hierarchy
+[INFO ][20170823 20:28:02,150][SingleConnectionFactory:293] Established shared JMS Connection: PooledConnection { org.apache.activemq.pool.ConnectionPool@703148b8 }
+[INFO ][20170823 20:28:02,411][MQProducerTest:35] 结束了，哈哈！
